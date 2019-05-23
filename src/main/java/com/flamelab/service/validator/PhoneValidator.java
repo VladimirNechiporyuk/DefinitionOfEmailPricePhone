@@ -12,7 +12,7 @@ public class PhoneValidator implements Validate {
     @Autowired
     private Definer definer;
 
-    private String phoneRegEx = "^\\+?([1-9]{2})?[\\s(]?[\\d]+[\\s)]?[\\s-_]?([\\d]{3})?[\\s-_]?([\\d]{2})?[\\s-_]?([\\d]{2})?\\b";
+    private String phoneRegEx = "^\\+?([1-9]{2})?[\\s]?[(]?[\\d]+[\\s)]?[\\s-_]?([\\d]{3})?[\\s-_]?([\\d]{2})?[\\s-_]?([\\d]{2})?\\b";
 
     @Override
     public boolean validateData(String inputData) {
@@ -20,5 +20,3 @@ public class PhoneValidator implements Validate {
         return definer.define(phoneRegEx, inputData);
     }
 }
-
-// +38(063)827-82-79

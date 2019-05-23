@@ -19,8 +19,8 @@ public class ValidateEngine {
 
     public DataType validate(String inputData) {
         for (Pair pair : getValidators()) {
-            if (pair.validator.validateData(inputData))
-                return pair.dataType;
+            if (pair.getValidator().validateData(inputData))
+                return pair.getDataType();
         }
         return DataType.UNKNOWN;
     }

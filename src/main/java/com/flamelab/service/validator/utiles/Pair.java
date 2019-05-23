@@ -2,13 +2,12 @@ package com.flamelab.service.validator.utiles;
 
 import com.flamelab.service.DataType;
 import com.flamelab.service.validator.Validate;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@AllArgsConstructor
+@Data
 public class Pair {
-    public Validate validator;
-    public final DataType dataType;
-
-    public Pair(Validate validator, DataType dataType) {
-        this.validator = validator;
-        this.dataType = dataType;
-    }
+    private Validate validator;
+    private final DataType dataType;
 }
