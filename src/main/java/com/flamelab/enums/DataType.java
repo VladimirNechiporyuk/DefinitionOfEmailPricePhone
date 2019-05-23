@@ -1,4 +1,4 @@
-package com.flamelab.service;
+package com.flamelab.enums;
 
 public enum DataType {
     UNKNOWN,

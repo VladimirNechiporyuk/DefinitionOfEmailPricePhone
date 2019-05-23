@@ -1,6 +1,6 @@
 package com.flamelab.controller;
 
-import com.flamelab.service.DataType;
+import com.flamelab.enums.DataType;
 import com.flamelab.service.InputDefinition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
