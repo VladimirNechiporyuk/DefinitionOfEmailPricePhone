@@ -9,7 +9,7 @@ public class Definer implements Define {
 
     public boolean define(String regEx, String inputData) {
         boolean resultOfMatching = inputData.matches(regEx);
-        log.info("Regular expression is: {}, Inputted data is: {}, Result of matching is: {}", regEx, inputData, resultOfMatching);
+        log.info("Regular expression is: {}, Result of matching is: {}", regEx, resultOfMatching);
         return resultOfMatching;
     }
 }

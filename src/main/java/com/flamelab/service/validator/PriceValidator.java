@@ -12,7 +12,7 @@ public class PriceValidator implements Validate {
     @Autowired
     private Definer definer;
 
-    private String priceRegEx = "\\b[1-9]+?(([,.\\s]?([\\d]+))+)?\\b";
+    private String priceRegEx = "\\b(\\D|([\\w]{3}\\s))?[1-9]+?(([,.\\s]?([\\d]+))+)?(\\s[\\w]{3})?\\b";
 
     @Override
     public boolean validateData(String inputData) {
